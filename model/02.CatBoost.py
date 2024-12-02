@@ -38,8 +38,7 @@ X_test, y_test = create_many_to_one_detailed_output(
     test_data.values, test_data['총합계'].values, input_window, output_window
 )
 
-# 데이터를 2D로 변환 (RandomForest에 맞게)
-X_train_flat = X_train.reshape(X_train.shape[0], -1)  # (샘플 수, 입력 시점 * 변수 수)
+X_train_flat = X_train.reshape(X_train.shape[0], -1) 
 X_test_flat = X_test.reshape(X_test.shape[0], -1)
 
 # 모델 학습
