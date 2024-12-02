@@ -14,7 +14,7 @@
 ## Model
 - LSTM + CatBoost 앙상블 모델 구성
 - LSTM ( 지난 90일 데이터로 다음 30일 예측)
-- CatBosot ( 지난 60일 데이터로 7일 예측)
+- CatBoost ( 지난 60일 데이터로 7일 예측)
 
 ## Performance
 - 24년 4월 한달 예측 (MAE 508 , 평균 주문량 3600) 
