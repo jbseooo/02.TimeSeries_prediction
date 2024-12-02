@@ -1,3 +1,14 @@
+import torch
+import torch.nn as nn
+import torch.optim as optim
+from torch.utils.data import DataLoader, TensorDataset
+import numpy as np
+import pandas as pd
+from sklearn.preprocessing import MinMaxScaler, StandardScaler,RobustScaler
+import holidays
+from datetime import timedelta
+
+
 model_data = df2.copy()
 
 model_data['사골_dif'] = model_data['사골'].diff()
